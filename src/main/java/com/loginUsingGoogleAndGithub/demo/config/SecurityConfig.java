@@ -33,9 +33,9 @@ public class SecurityConfig {
                                 .userService(authService) // Custom OAuth2 User Service
                         )
                 )
-                .requiresChannel(channel -> channel
-                        .anyRequest().requiresSecure() // Force HTTPS for all requests
-                )
+//                .requiresChannel(channel -> channel
+//                        .anyRequest().requiresSecure() // Force HTTPS for all requests
+//                )
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
                 )
